@@ -1,0 +1,31 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        double npa;
+
+        System.out.println("Entre com sua NPA: ");
+        npa = entrada.nextDouble();
+
+        if(npa >= 60)
+            System.out.println("Parabens voce passou !!!!");
+        else
+        {
+            double np3;
+            System.out.println("Entre com a nota de NP3: ");
+            np3 = entrada.nextDouble();
+
+            double res;
+
+            res = (np3 + npa)/2;
+
+            if(res >= 50)
+                System.out.println("Parabens voce passou");
+            else
+                System.out.println("Infelizmente voce não passou :(");
+        }
+    }
+}
